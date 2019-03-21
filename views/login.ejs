@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		
+		* {cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1160.ani), url(http://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;} 
+		
+	.bg_v
+		{
+			position: fixed;
+  right: 0;
+  z-index: -9999;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+		}
+		
+		.containe
+		{
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			width: 100%;
+			position: fixed;
+			left: 0;
+			top: 0;
+			box-shadow: 0 0 5px 5px white;
+			border-bottom: 5px solid white;
+			border-top: 5px solid white;
+			height: 50px;
+			background-color: black;
+			color: white;
+		}
+		.actor_container
+		{
+			font-weight: 1000;
+			text-align: center;
+			line-height: 50px;
+			position: fixed;
+			top: 5px;
+			width: 100px;
+			height: 50px;
+		}
+		.actor_container:hover
+		{
+			transition: .5s all;
+			background-color: white;
+			color: black;
+		}
+		.actor_container_center
+		{
+			position: fixed;
+			top: 5px;
+			left: 50%;
+			margin-left: -100px;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-weight: 1000;
+			text-shadow: 0 0 5px blue;
+		}
+		.login_container
+		{
+			perspective: 1000px;
+		font-weight: 1000;
+		
+			position: absolute;
+			width: 400px;
+			height: 270px;
+			left: 50%;
+			margin-left: -200px;
+			top: 50%;
+			margin-top: -100px;
+			text-align: center;
+		}
+		.login_background
+		{
+			box-shadow: 0 0 20px 5px white;
+			transform: rotateX(30deg);
+			border: thick solid #0B163F;
+			border-radius: 20px;
+			background-color: aqua;
+			opacity: .3;
+		}
+		
+
+		.log_input
+		{
+			padding: 5px;
+			border: thick solid #0C1343;
+			border-radius: 10px;
+			width: 300px;
+			height: 40px;
+		}
+		.log_button
+		{
+			border: thick solid #0C1343;
+			border-radius: 10px;
+			width: 100px;
+			height: 30px;
+		}
+		.img_ufo
+		{
+			animation: ufo_enter 3s forwards;
+		}
+		@keyframes ufo_enter
+		{
+			from{
+				opacity: 0;
+				display: none;
+			}
+			to{
+				opacity: 1;
+				display: block;
+			}
+		}
+		
+		
+		
+	</style>
+	
+<meta charset="utf-8">
+<title>LOGIN PAGE</title>
+</head>
+
+<body>
+	
+	<video autoplay loop muted class="bg_v">
+		<source src="/videoplayback.mp4" type="video/mp4">
+		</video>
+
+	<div class="containe">
+		<div style="position: fixed;top: 5px; left: 0; transform: scale(.75); width: auto;"><img src="/samarpan.png" draggable="false"></div>
+		<div class="actor_container_center">THE TECHNOPHILIA</div>
+	<div class="actor_container" style="right: 100px;">LOG-In</div>
+		<div class="actor_container" style="right: 0;">SIGN-UP</div>
+	</div>
+	
+	<div class="login_container">
+	<div class="login_container login_background"></div>
+		<div class="login_container login">
+				<% include ./partials/messages %>
+        <table class="login_table" style="width: 400px; height: 200px;">
+           
+            <form action="/users/login" method="POST">
+			<tr><td colspan="2" class="log_data">EMAIL</td></tr>
+            <tr><td colspan="2">
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class = "log_input"
+                      placeholder="Enter Email"
+                    />
+            
+            
+            
+            
+            </td></tr>
+			<tr><td colspan="2" class="log_data">PASSWORD</td></tr>
+			<tr><td colspan="2"><input
+                type="password"
+                id="password"
+                name="password"
+                class="log_input"
+                placeholder="Enter Password"
+              /></td></tr>
+			<tr><td><button type="submit" class="log_button" value = "Log-In">Login</button></td></tr>
+         </form>    
+        </table>
+		</div>
+	</div>
+	<img src="/UFO-MotionBlur700px.gif" class="img_ufo" style="position: fixed; top:100px; left: 50%; width: 200px;height: auto; margin-left: -100px;">
+	
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!--<h1 class="mt-4">Dashboard</h1>
+
+<p class="lead mb-3">Hello <%= name %></p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       
+        .a1{
+            display: inline-block;
+            color: antiquewhite;
+        }
+
+        #heading{
+            background-color:black;
+            width: 100%;
+            height:50px;
+        }
+        #dash{
+           margin-left:100px;
+           margin-top:10px;
+           
+
+        }
+        #hel{
+            margin-left:500px;
+            margin-top:10px;
+            font-size: larger;
+        
+        }
+        #log{
+            float: right;
+            margin-right:100px;
+            margin-top:10px;
+            font-size:larger;
+        }
+        .card{
+            margin-top: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id = "heading" class = "conatiner-fluid">
+       <div id = "dash"class = "a1">Dashboard</div>
+       <div id = "hel" class="a1"> Hello <%= name %></div>
+       <div id = "log" class="a1"><a href = "/users/logout"> LOGOUT</a></div>
+
+    </div>
+        <div class ="container">
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://hackster.imgix.net/uploads/attachments/794329/53539948_410730096397745_3527220494312931328_n_v9YDnE0vtc.jpg?auto=compress%2Cformat&w=900&h=675&fit=min" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">ELECTRONICS QUIZ</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/dashboard/test" class="btn btn-primary">START TEST</a>
+                    </div>
+                  </div>
+                </div>
+</body>
+</html>

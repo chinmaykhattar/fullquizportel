@@ -1,0 +1,35 @@
+body{
+    width:100%;
+    height:100%;
+   
+   background-image: url("http://www.trendelectronics.in/images/cover_page.jpg");
+}
+.border{
+    height:500px;
+    border-color: black;
+    box-shadow: 10px 10px 10px 10px black;
+    background-color:whitesmoke;
+}
+/*.btn{
+    margin-top:100px;
+    margin-left:50px;
+}*/
+h1{
+    color: chartreuse;
+    font-weight: 900;
+    
+}
+.col-4{
+    background-color: cornsilk;
+    height: 620px;
+}
+#demo{
+    color:blueviolet;
+}
+#Confirmation{
+    text-align: center;
+    background-color: antiquewhite;
+    height:80px;
+}
+
+
