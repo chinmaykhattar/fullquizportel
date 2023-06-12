@@ -46,7 +46,7 @@ Void search_files(const char *dir_path, const char *file_pattern, const char *re
 
         If (entry->d_type == DT_DIR) { 
 
-            Search_files(file_path, file_pattern, regex_pattern);  // Recursively search directories 
+            Search_files(file_path, file_pattern, regex_pattern);
 
         } else if (entry->d_type == DT_REG) { 
 
